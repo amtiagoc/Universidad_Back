@@ -1,0 +1,26 @@
+{
+  "name": "universidad-api",
+  "version": "1.0.0",
+  "description": "API proyecto de seguimiento #4-Backend & Postman",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cano2030/Universidad_Back.git"
+  },
+  "author": "Santiago Cano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cano2030/Universidad_Back/issues"
+  },
+  "homepage": "https://github.com/cano2030/Universidad_Back#readme",
+  "dependencies": {
+    "exceljs": "^4.2.1",
+    "express": "^4.17.1",
+    "nodemailer": "^6.5.0",
+    "pg": "^8.6.0"
+  }
+}
