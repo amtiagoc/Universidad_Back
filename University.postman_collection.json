@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "65d579a1-a3a6-4a02-995b-2151d8249665",
+		"name": "University",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/people/excel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"people",
+						"excel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create People",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Santiago\",\r\n    \"email\":\"aitest245@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
