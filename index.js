@@ -10,11 +10,11 @@ const path = require("path");
 app.use(express.json());
 app.use("/",router);
 app.use(express.static(path.join(__dirname, "public")));
-app.use("/reportes", express.static(path.join(__dirname, "reports")));
+app.use("/reports", express.static(path.join(__dirname, "reports")));
 
 const PORT = 3001
 app.listen(PORT, () => {
-    console.log(`Uniiversidad app listening at http://localhost:${PORT}`)
+    console.log(`University app listening at http://localhost:${PORT}`)
 })
 
 

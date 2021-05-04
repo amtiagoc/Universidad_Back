@@ -14,21 +14,22 @@ const createPeople = async (req, res) => {
         let result = await _pg.executeSql(sql);
         // send mail with defined transport object
         await transporter.sendMail({
-            from: '"Santiago Cano 👻" <cano2030@gmail.com>', // sender address
+            from: '"Santiago Cano 👻" <aitest245@gmail.com>', // sender address
             to: person.email, // list of receivers
             subject: "Hello ✔", // Subject line
             text: "Hello world?", // plain text body
-            html: "<b>Hello ${person.name}?</b>", // html body
+            html: `<h1>Hola ${person.name}\</h1><hr></br>
+                    <p>¡Bienvenido a la Universidad!, gracias por haberte registrado.</p> </br>`, // html body
         });
         return res.send({
             ok: true,
-            message: result.rowCount == 1 ? "Usuario creado, revisa tu correo!" : "El usuario no fue creado",
+            message: result.rowCount == 1 ? "User created, check your email nowwww!" : "User was not created",
             content: person,
         });
     } catch (error) {
         return res.send({
             ok: false,
-            message: "Ha ocurrido un error creando el usuario",
+            message: "There was an error creating the user",
             content: error,
         });
     }
